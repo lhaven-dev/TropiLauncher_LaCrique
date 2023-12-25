@@ -1,14 +1,9 @@
 {
-  "name": "helioslauncher",
+  "name": "tropimonLauncher",
   "version": "2.1.0",
-  "productName": "Helios Launcher",
+  "productName": "Tropimon Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
-  "license": "UNLICENSED",
-  "homepage": "https://github.com/dscalzi/HeliosLauncher",
-  "bugs": {
-    "url": "https://github.com/dscalzi/HeliosLauncher/issues"
-  },
+  "author": "Erusel",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -46,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscalzi/HeliosLauncher.git"
+    "url": "git+https://github.com/Erusel/TropimonLauncher.git"
   }
 }
