@@ -1,6 +1,6 @@
 {
   "name": "tropimonLauncher",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "productName": "Tropimon Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "Erusel",
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Erusel/TropimonLauncher.git"
+    "url": "git+https://github.com/Erusel/TropimonLauncher"
   }
 }
