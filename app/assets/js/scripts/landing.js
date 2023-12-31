@@ -179,7 +179,7 @@ server_selection_button.onclick = async e => {
 const refreshMojangStatuses = async function(){
     loggerLanding.info('Refreshing Mojang Statuses..')
 
-    let status = 'red'
+    let status = 'green'
     let tooltipEssentialHTML = ''
     let tooltipNonEssentialHTML = ''
 
