@@ -101,7 +101,7 @@ function showUpdateUI(info){
     //TODO Make this message a bit more informative `${info.version}`
     document.getElementById('image_seal_container').setAttribute('update', true)
     document.getElementById('image_seal_container').onclick = () => {
-        setOverlayContent('Update Available', 'A new update for the launcher is available. Would you like to install now?', 'Install', 'Later')
+        setOverlayContent('Mise a jour Disponible', 'Une Mise a jour pour le launcher est disponible. Voulez vous l\'installer maintenant ?', 'Installer', 'Plus tard')
         setOverlayHandler(() => {
             if(!isDev){
                 ipcRenderer.send('autoUpdateAction', 'installUpdateNow')
@@ -127,7 +127,7 @@ $(function(){
 
 document.addEventListener('readystatechange', function () {
     if (document.readyState === 'interactive'){
-        loggerUICore.info('UICore Initializing..')
+        loggerUICore.info('Chargement du coeur')
 
         // Bind close button.
         Array.from(document.getElementsByClassName('fCb')).map((val) => {

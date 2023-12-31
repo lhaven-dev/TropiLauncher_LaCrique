@@ -2858,10 +2858,17 @@ input:checked + .toggleSwitchSlider:before {
     height: 70px;
     width: auto;
     position: relative;
-    border: 2px solid white;
     box-sizing: border-box;
     border-radius: 50%;
 }
+#tropimon_text {
+    height: 70px;
+    width: auto;
+    position: relative;
+    padding-left: 115%;
+    margin-top: -73px;
+}
+
 
 /* Logo container styles. */
 #image_seal_container {

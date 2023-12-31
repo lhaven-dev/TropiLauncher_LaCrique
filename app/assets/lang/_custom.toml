@@ -1,7 +1,5 @@
-# Custom Language File for Launcher Customizer
-
 [ejs.app]
-title = "Tropimon Launcher"
+title = "TROPIMON"
 
 [ejs.landing]
 mediaGitHubURL = "https://tropimon.fr"
@@ -12,7 +10,7 @@ mediaDiscordURL = "https://discord.gg/QZk6vU5A"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/Erusel/TropimonLauncher/"
-supportLink = "https://github.com/Erusel/TropimonLauncher/issues"
+supportLink = "https://discord.gg/QZk6vU5A"
 
 [ejs.welcome]
 welcomeHeader = "Bienvenue sur Tropimon !"
