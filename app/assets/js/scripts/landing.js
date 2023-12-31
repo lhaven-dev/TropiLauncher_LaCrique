@@ -152,7 +152,6 @@ function updateSelectedAccount(authUser){
             document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-heads.net/avatar/${authUser.uuid}')`
         }
     }
-    user_text.innerHTML = username
 }
 updateSelectedAccount(ConfigManager.getSelectedAccount())
 
@@ -180,7 +179,7 @@ server_selection_button.onclick = async e => {
 const refreshMojangStatuses = async function(){
     loggerLanding.info('Refreshing Mojang Statuses..')
 
-    let status = 'green'
+    let status = 'red'
     let tooltipEssentialHTML = ''
     let tooltipNonEssentialHTML = ''
 
@@ -198,6 +197,11 @@ const refreshMojangStatuses = async function(){
 
     for(let i=0; i<statuses.length; i++){
         const service = statuses[i]
+        loggerLanding.info(service.name)
+
+        if (service.name == 'Authentication Service'){
+            continue
+        }
 
         const tooltipHTML = `<div class="mojangStatusContainer">
             <span class="mojangStatusIcon" style="color: ${MojangRestAPI.statusToHex(service.status)};">&#8226;</span>

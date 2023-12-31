@@ -2862,11 +2862,11 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 50%;
 }
 #tropimon_text {
-    height: 70px;
+    height: 60px;
     width: auto;
     position: relative;
     padding-left: 115%;
-    margin-top: -73px;
+    margin-top: -66px;
 }
 
 

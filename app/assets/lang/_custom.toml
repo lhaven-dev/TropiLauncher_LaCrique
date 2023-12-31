@@ -3,10 +3,11 @@ title = "TROPIMON"
 
 [ejs.landing]
 mediaGitHubURL = "https://tropimon.fr"
-mediaTwitterURL = "#"
-mediaInstagramURL = "#"
-mediaYouTubeURL = "#"
+mediaTwitterURL = "https://twitter.com/PlayTropimon"
+mediaInstagramURL = "https://www.instagram.com/tropimon/"
+mediaYouTubeURL = "https://www.youtube.com/channel/UCJKleMt81d4RPq-odOfBYDQ"
 mediaDiscordURL = "https://discord.gg/QZk6vU5A"
+mediaTikTokURL = "https://www.tiktok.com/@tropimon"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/Erusel/TropimonLauncher/"
