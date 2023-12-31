@@ -1,1 +1,2 @@
-test changelog
+- Removed Mojang Auth on Settings Tab and LoginOptions
+- Translated some Console Message

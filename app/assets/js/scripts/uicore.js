@@ -35,11 +35,11 @@ if(!isDev){
     ipcRenderer.on('autoUpdateNotification', (event, arg, info) => {
         switch(arg){
             case 'checking-for-update':
-                loggerAutoUpdater.info('Checking for update..')
+                loggerAutoUpdater.info('Recherche de mise a jour...')
                 settingsUpdateButtonStatus(Lang.queryJS('uicore.autoUpdate.checkingForUpdateButton'), true)
                 break
             case 'update-available':
-                loggerAutoUpdater.info('New update available', info.version)
+                loggerAutoUpdater.info('Nouvelle mise a jour disponible : ', info.version)
                 if(process.platform === 'darwin'){
                     info.darwindownload = `https://github.com/dscalzi/HeliosLauncher/releases/download/v${info.version}/Helios-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.dmg`
                     showUpdateUI(info)
@@ -48,7 +48,7 @@ if(!isDev){
                 populateSettingsUpdateInformation(info)
                 break
             case 'update-downloaded':
-                loggerAutoUpdater.info('Update ' + info.version + ' ready to be installed.')
+                loggerAutoUpdater.info('La mise a jour ' + info.version + ' est prete a être installé.')
                 settingsUpdateButtonStatus(Lang.queryJS('uicore.autoUpdate.installNowButton'), false, () => {
                     if(!isDev){
                         ipcRenderer.send('autoUpdateAction', 'installUpdateNow')
@@ -57,7 +57,7 @@ if(!isDev){
                 showUpdateUI(info)
                 break
             case 'update-not-available':
-                loggerAutoUpdater.info('No new update found.')
+                loggerAutoUpdater.info('Aucune mise a jour trouvé.')
                 settingsUpdateButtonStatus(Lang.queryJS('uicore.autoUpdate.checkForUpdatesButton'))
                 break
             case 'ready':
@@ -101,7 +101,7 @@ function showUpdateUI(info){
     //TODO Make this message a bit more informative `${info.version}`
     document.getElementById('image_seal_container').setAttribute('update', true)
     document.getElementById('image_seal_container').onclick = () => {
-        /*setOverlayContent('Update Available', 'A new update for the launcher is available. Would you like to install now?', 'Install', 'Later')
+        setOverlayContent('Update Available', 'A new update for the launcher is available. Would you like to install now?', 'Install', 'Later')
         setOverlayHandler(() => {
             if(!isDev){
                 ipcRenderer.send('autoUpdateAction', 'installUpdateNow')
@@ -113,7 +113,7 @@ function showUpdateUI(info){
         setDismissHandler(() => {
             toggleOverlay(false)
         })
-        toggleOverlay(true, true)*/
+        toggleOverlay(true, true)
         switchView(getCurrentView(), VIEWS.settings, 500, 500, () => {
             settingsNavItemListener(document.getElementById('settingsNavUpdate'), false)
         })
