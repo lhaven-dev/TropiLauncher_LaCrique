@@ -1,2 +1,1 @@
-- Removed Mojang Auth on Settings Tab and LoginOptions
-- Translated some Console Message
+- Changed Tropimod download link

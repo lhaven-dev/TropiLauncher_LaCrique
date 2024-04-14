@@ -2,7 +2,7 @@ const { DistributionAPI } = require('helios-core/common')
 
 const ConfigManager = require('./configmanager')
 
-exports.REMOTE_DISTRO_URL = 'http://38.242.251.240:4455/electron/distribution.json'
+exports.REMOTE_DISTRO_URL = 'https://files.tropimon.fr/distribution.json'
 const api = new DistributionAPI(
     ConfigManager.getLauncherDirectory(),
     null, // Injected forcefully by the preloader.
