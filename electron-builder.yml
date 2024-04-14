@@ -39,7 +39,7 @@ mac:
 # Linux Configuration
 linux: 
   target: 'AppImage'
-  maintainer: 'Erusel'
+  maintainer: 'Tropimon'
   vendor: 'Tropimon'
   synopsis: 'Tropimon Launcher'
   description: 'Launcher customisé par Tropimon'
