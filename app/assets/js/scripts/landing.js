@@ -116,7 +116,7 @@ document.getElementById('launch_button').addEventListener('click', async e => {
             if(details != null){
                 loggerLanding.info('Jvm Details', details)
                 await dlAsync()
-
+                window.close()
             } else {
                 await asyncSystemScan(server.effectiveJavaOptions)
             }
