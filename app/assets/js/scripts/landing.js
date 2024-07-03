@@ -116,7 +116,10 @@ document.getElementById('launch_button').addEventListener('click', async e => {
             if(details != null){
                 loggerLanding.info('Jvm Details', details)
                 await dlAsync()
-                window.close()
+                loggerLanding.info('Game launched successfully, waiting 20 seconds before closing...')
+                setTimeout(() => {
+                    window.close()
+                }, 7000);
             } else {
                 await asyncSystemScan(server.effectiveJavaOptions)
             }
